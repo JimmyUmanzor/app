@@ -4,8 +4,8 @@ import { usePathname } from 'next/navigation'
 import React from 'react'
 
 interface PropiedadLink2{
-    Header: string
-    Body: string
+    Header?: string;
+    Body?: string;
 }
 
 export default function ActiveCard({Header,Body}:PropiedadLink2) {

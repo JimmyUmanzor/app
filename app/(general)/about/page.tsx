@@ -10,12 +10,13 @@ export default function page() {
 return (
 <div>
           {
-                textCard.map(textCard =>(
-                    <ActiveCard {...textCard.Header,textCard.Body}></ActiveCard>
+                 textCard.map((text, index) => (
+                  <ActiveCard key={index} Header={text.Header} Body={text.Body}></ActiveCard>
                 ))
             }
 
       </div>
 )
 }
+
 

@@ -7,6 +7,7 @@ export default function NavBar() {
     const navItem=[
         {path:'/contacto',text:"Contacto"},
         {path:'/about', text:"Información"},
+        { path: '/registro', text: "Registro" },
         {path:'/',text:"Otros"}
     ]
    

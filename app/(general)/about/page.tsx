@@ -1,22 +1,15 @@
-import ActiveCard from "@/app/Components/ActiveCard"
-
+'use client'
+import CardComponent from "@/app/Components/CardComponent";
+import ProviderContacto, {useTema} from "@/app/Contexto/ProviderContacto";
 export default function page() {
-  
-  const textCard=[
-    {Header:"Noteworthy technology acquisitions 2021"},
-    {Body:"Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order"}
-    ]
 
-return (
-<div>
-          {
-                 textCard.map((text, index) => (
-                  <ActiveCard key={index} Header={text.Header} Body={text.Body}></ActiveCard>
-                ))
-            }
+  const {tema} = useTema()
+  return (
+    <main>
+        {tema}
+      <CardComponent title="Card de prueba" body="Card de prueba para generar componente"></CardComponent>
 
-      </div>
-)
+      
+    </main>
+  )
 }
-
-

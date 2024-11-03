@@ -1,6 +1,12 @@
+//about
+//general
+
+import FormularioContacto from "@/app/Components/FormularioContacto"
 
 export default function page() {
   return (
-    <div> Componente de contacto  </div>
+    <div>
+      <FormularioContacto></FormularioContacto>
+    </div>
   )
 }
